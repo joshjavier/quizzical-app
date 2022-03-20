@@ -124,7 +124,6 @@ fieldset {
 .question-block {
     padding-bottom: 1em;
     border-bottom: 0.8px solid #DBDEF0;
-    max-width: 450px;
 }
 
 .question-block + .question-block {
@@ -179,8 +178,10 @@ input[type=radio]:focus-visible + label {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1em 2em;
     margin-top: 2.5em;
 }
 
@@ -200,10 +201,7 @@ input[type=radio]:focus-visible + label {
         font-size: 1.2rem;
     }
 
-    .question-block {
-        width: 80%;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+    .questions-page ul {
+        max-width: 550px;
     }
 }
